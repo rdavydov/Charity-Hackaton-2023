@@ -98,7 +98,7 @@ startGameButton.addEventListener('click', () => {
   startGameButton.innerHTML = 'Заново';
 
   flatBoard.forEach((item) => {
-    let image = item === 0 ? '' : `<img data-item="${item}" src="/photo/${boardSize}/${item}.jpg" alt="">`;
+    let image = item === 0 ? '' : `<img data-item="${item}" src="photo/${boardSize}/${item}.jpg" alt="">`;
     content.push(`<div class="cell ${className}">` + `<div class="image-wrapper">` + image + `</div>` + `</div>`);
 
     transforms[item] = [0, 0];
